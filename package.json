@@ -1,0 +1,29 @@
+{
+  "name": "staking-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -p $PORT",
+    "lint": "next lint",
+    "heroku-postbuild": "npm run build && npm run upload",
+    "compile": "solcjs --abi  --include-path node_modules/ --base-path . blockchain/contracts/StakingToken.sol --output-dir blockchain/build"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.5.0",
+    "bulma": "^0.9.3",
+    "next": "12.1.4",
+    "react": "18.0.0",
+    "react-dom": "18.0.0",
+    "solc": "0.8.13",
+    "web3": "^1.7.1"
+  },
+  "devDependencies": {
+    "eslint": "8.12.0",
+    "eslint-config-next": "12.1.4"
+  }
+}
