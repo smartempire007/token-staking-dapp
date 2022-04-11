@@ -18,7 +18,7 @@ const StakingDapp = () =>{
     const [vmContract, setVmContract] = useState(null);
     const [stakeToken, setStakeToken] = useState(null);
     const [claimRewards, setClaimRewards] = useState(null);
-    const [purchases , setPurchases] = useState(0);
+    //const [purchases , setPurchases] = useState(0);
     
 
     useEffect(() => {
