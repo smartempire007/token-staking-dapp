@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import { useState, useEffect } from 'react';
 import Web3 from 'web3';
-import tokenStakeContract from '../blockchain/stakeToken';
+import tokenStakeContract from '../staking-contract/stakeToken';
 import 'bulma/css/bulma.css';
 import styles from '../styles/StakingDapp.module.css';
 

@@ -1,14 +1,15 @@
-/** @type {import('next').NextConfig} */
+// /** @type {import('next').NextConfig} */
+// const nextConfig = {
+//   reactStrictMode: true,
+// }
+
+// module.exports = nextConfig
+
 if (process.env.NODE_ENV === 'development') {
   require('dotenv').config()
 }
-const nextConfig = {
-  reactStrictMode: true,
-}
 
-//module.exports = nextConfig
-
-module.exports = nextConfig, {
+module.exports = {
   env: {
     BASE_URL: process.env.BASE_URL,
   }

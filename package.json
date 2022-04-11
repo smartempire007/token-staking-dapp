@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start -p $PORT",
     "lint": "next lint",
-    "heroku-postbuild": "npm run build && npm run upload",
+    "heroku-postbuild": "npm run build",
     "compile": "solcjs --abi  --include-path node_modules/ --base-path . blockchain/contracts/StakingToken.sol --output-dir blockchain/build"
   },
   "engines": {
