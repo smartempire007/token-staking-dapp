@@ -3,9 +3,14 @@ import { useState, useEffect } from 'react';
 import Web3 from 'web3';
 import tokenStakeContract from '../staking-contract/stakeToken';
 import 'bulma/css/bulma.css';
-import '../styles/StakingDapp.module.css';
+// import '../styles/StakingDapp.module.css';
 // import styles from '../styles/StakingDapp.module.css';
 
+const main = {
+    fontFamily: 'Arial, Helvetica, sans-serif',
+    fontSize: '2em',
+    fontWeight: 'bold'
+}
 
 const StakingDapp = () =>{
     
@@ -134,7 +139,7 @@ const StakingDapp = () =>{
         }
     }
     return (
-        <div className='main'>
+        <div className={main}>
             <Head>
                 <title>TokenStaking App</title>
                 <meta name="description" content="A blockchain token staking app" />
