@@ -3,7 +3,8 @@ import { useState, useEffect } from 'react';
 import Web3 from 'web3';
 import tokenStakeContract from '../staking-contract/stakeToken';
 import 'bulma/css/bulma.css';
-import styles from '../styles/StakingDapp.module.css';
+import '../styles/StakingDapp.module.css';
+// import styles from '../styles/StakingDapp.module.css';
 
 
 const StakingDapp = () =>{
@@ -133,7 +134,7 @@ const StakingDapp = () =>{
         }
     }
     return (
-        <div className={styles.main}>
+        <div className='main'>
             <Head>
                 <title>TokenStaking App</title>
                 <meta name="description" content="A blockchain token staking app" />
